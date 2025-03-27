@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>Fly Gaming</title>
+    <link rel="stylesheet" href="css/style-pendaftaran.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="form signup">
+        <header>Login</header>
+        <form action="produk.html">
+          <input type="text" placeholder="Username" required />
+          <input type="password" placeholder="Password" required />
+          <input type="submit" value="Signup" onclick="login(event)" />
+         <div class="link-login">
+            <p>Belum punya akun? <a href="register.html">Daftar di sini</a></p>
+         </div>
+        </form>
+      </div>
+    </section>
+  </body>
+
+  <script type="text/javascript">
+    function login(event) {
+      event.preventDefault();
+      alert(`Anda berhasil login!`);
+      window.location.href = "produk.html";
+}
+  </script>
+</html>

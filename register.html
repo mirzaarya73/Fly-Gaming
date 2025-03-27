@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>Fly Gaming</title>
+    <link rel="stylesheet" href="css/style-pendaftaran.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="form signup">
+        <header>Register</header>
+        <form action="#">
+          <input type="text" placeholder="Username" required />
+          <input type="password" placeholder="Password" required />
+          <input type="text" placeholder="Konfirmasi Password" required />
+          <input type="submit" value="Daftar" onclick="daftar(event)" />
+          <div class="deskripsi-login">
+            <p>Dengan mendaftar, anda setuju dengan <a href="login.html" style="text-decoration: none;">Persyaratan dan Ketentuan</a> kami</p>
+         </div>
+
+         <div class="link-login">
+            <p>Sudah punya akun? <a href="login.html" style="text-decoration: none;">Login di sini</a></p>
+         </div>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script type="text/javascript">
+    function daftar(event) {
+      event.preventDefault();
+      alert(`Anda berhasil daftar`);
+      window.location.href = "login.html";
+}
+  </script>
+</html>

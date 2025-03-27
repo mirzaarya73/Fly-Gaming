@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/logo.png">
+	<title>Beranda</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/style_pemesanan.css">
+<body>
+	<div class="container">
+        <div class="sidebar">
+            <div class="header-logo">
+                <div class="item-logo">
+                    <a href="#">
+                        <img src="img/logo.png" class="logo">
+                    </a>
+                    <span class="nama-logo">Fly Gaming</span>
+                </div>
+            </div>
+            <div class="main">
+            <div class="list-item">
+                <a href="#" active>
+                    <img src="img/produk.png" class="icon">
+                    <span class="deskripsi">Produk</span>
+                </a>
+            </div>
+            <div class="list-item">
+                <a href="cek_pesanan.html">
+                    <img src="img/search.png" class="icon">
+                    <span class="deskripsi">Cek Pesanan</span>
+                </a>
+            </div>
+            <a href="index.html">
+       <div class="logout">
+                    <img src="img/logout.png" class="icon">
+                    <span class="deskripsi">Logout</span>
+            </div>         
+            </a>
+        </div>
+        </div>
+		<div class="content">
+			<div id="menu-button">
+				<input type="checkbox" id="menu-checkbox">
+				<label for="menu-checkbox" id="menu-label">
+					<div id="hamburger">
+					</div>
+				</label>
+			</div>
+			<div class="navbar">
+				<div class="saldo">
+					<span>Saldo : Rp 100.000</span>
+				</div>
+				<div class="profil">
+					<img src="img/user.png" class="profil-pic">
+					<span class="profil-nama">Mirza</span>
+				</div>
+			</div>
+			<div class="grid">
+      <!-- Left Section -->
+      <div class="left-section">
+        <div class="header">
+          <img alt="Mobile Legend Image" class="header-img" src="https://storage.googleapis.com/a1aa/image/ibW4IDK9bhqNAxJ6cdi28zvfMmXADBQI7IX1glWEJ4s.jpg"/>
+          <div class="header-text">
+            <h1>Mobile Legend</h1>
+            <p>Joki Rank</p>
+          </div>
+        </div>
+        <div class="warning">
+          <p class="warning-title">Peringatan:</p>
+          <p>jangan login ketika proses belom selesai jika login maka proses akan kami berhentikan dan di anggap selesai</p>
+        </div>
+        <div class="tutorial_transaksi">
+          <p class="tutorial-title">Cara Transaksi:</p>
+          <ol class="list-tutorial">
+              <p>
+                <li>Masukkan ID & Server Mobile Legends</li>
+                <li>Masukkan Username & Password Moonton/Tiktok Facebook (tergantung bind akun)</li>
+                <li>pilih layanan yang anda mau</li>
+                <li>pilih metode pembayarannya</li>
+                <li>Masukkan voucher jika ada</li>
+                <li>Masukkan nomor Whatsapp yang aktif</li>
+              </p>
+          </ol>
+        </div>
+        <div class="product-info">
+          <p class="product-title">🔥 Produk Mobile Legend</p>
+          <p>Berikut adalah beberapa produk yang paling populer saat ini</p>
+        </div>
+      </div>
+      <div class="right-section">
+      	<div class="section">
+      		<div class="section-header">
+      			<div class="input-section">
+          <div class="section-number">1</div>
+          <br>
+          <div class="section-title">MASUKKAN ID PENGGUNA</div>
+          <select>
+            <option>Pilih via login</option>
+            <option>Moonton</option>
+            <option>Tiktok</option>
+            <option>Facebook</option>
+          </select>
+          <input placeholder="Email/No. Hp/Moonton ID" type="text"/>
+          <input placeholder="Catatan Untuk Penjoki" type="text"/>
+      		</div>
+      	</div>
+        </div>
+        <div class="denomination-section">
+          <div class="section-number">2</div>
+          <br>
+          <h3>PILIH DENOMINASI</h3>
+          <br>
+          <div class="denomination-grid">
+            <div class="denomination-item">
+              <p>5 Bintang Epic <span>+ (2 Bintang)</span></p>
+              <button class="price" onclick="updatePaymentAmount(30000)">Rp. 30,000</button>
+            </div>
+            <div class="denomination-item">
+              <p>5 Bintang Legend <span>+(1 Bintang)</span></p>
+              <button class="price" onclick="updatePaymentAmount(40000)">Rp. 40,000</button>
+            </div>
+            <div class="denomination-item">
+              <p>5 Bintang Mytic <span>+(1 Bintang)</span></p>
+              <button class="price" onclick="updatePaymentAmount(50000)">Rp. 50,000</button>
+            </div>
+            <div class="denomination-item">
+              <p>10 Bintang Honor <span>+(1 Bintang)</span></p>
+              <button class="price" onclick="updatePaymentAmount(90000)">Rp. 90,000</button>
+            </div>
+            <div class="denomination-item">
+              <p>5 Bintang Glory <span>+(1 Bintang)</span></p>
+              <button class="price" onclick="updatePaymentAmount(100000)">Rp. 100,000</button>
+            </div>
+            <div class="denomination-item">
+              <p>7 Bintang Glory <span>+ (1 Bintang)</span></p>
+              <button class="price" onclick="updatePaymentAmount(120000)">Rp. 120,000</button>
+            </div>
+            <div class="denomination-item">
+              <p>5 Bintang Imortal </p>
+              <button class="price" onclick="updatePaymentAmount(150000)">Rp. 150,000</button>
+            </div>
+            <div class="denomination-item">
+              <p>10 Bintang Immortal <span>+(1 Bintang)</span></p>
+              <button class="price" onclick="updatePaymentAmount(250000)">Rp. 250,000</button>
+            </div>
+          </div>
+        </div>
+         <div class="section">
+            <div class="section-header">
+                <div class="section-number">3</div>
+                <h2 class="section-title">PILIH PEMBAYARAN</h2>
+            </div>
+            <div class="grid-list">
+                <div class="grid-item">
+                    <span>SALDO</span>
+                    <span class="icon-text payment">Rp.</span>
+                </div>
+                <div class="grid-item">
+                    <span>BCA</span>
+                    <span class="icon-text payment">Rp.</span>
+                </div>
+                <div class="grid-item">
+                    <span>BNI</span>
+                    <span class="icon-text payment">Rp.</span>
+                </div>
+                <div class="grid-item">
+                    <span>SINARMAS</span>
+                    <span class="icon-text payment">Rp.</span>
+                </div>
+                <div class="grid-item">
+                    <span>SEABANK</span>
+                    <span class="icon-text payment">Rp.</span>
+                </div>
+                <div class="grid-item">
+                    <span>LINEBANK</span>
+                    <span class="icon-text payment">Rp.</span>
+                </div>
+                <div class="grid-item">
+                    <span>SHOPEEPAY</span>
+                    <span class="icon-text payment">Rp.</span>
+                </div>
+                <div class="grid-item">
+                    <span>DANA</span>
+                    <span class="icon-text payment">Rp.</span>
+                </div>
+                <div class="grid-item selected">
+                    <span>OVO</span>
+                    <span class="icon-text payment">Rp.</span>
+                </div>
+                <div class="grid-item">
+                    <span>GOPAY</span>
+                    <span class="icon-text payment">Rp.</span>
+                </div>
+                <div class="grid-item">
+                    <span>QRIS</span>
+                    <span class="icon-text payment">Rp.</span>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">4</div>
+                <h2 class="section-title">MASUKKAN VOUCHER</h2>
+            </div>
+            <input type="text" placeholder="Masukkan Voucher" class="input">
+        </div>
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">5</div>
+                <h2 class="section-title">MASUKKAN NOMOR WHATSAPP</h2>
+            </div>
+            <input type="number" placeholder="Nomor Whatsapp" class="input">
+        </div>
+        <button class="btn" onclick="order()">Order Sekarang</button>
+    </div>
+      </div>
+    </div>
+		</div>
+	</div>
+</body>
+<script src="script/berhasil_order.js"></script>
+<script src="script/harga.js"></script>
+<script src="script/animasi.js"></script>
+</html>
